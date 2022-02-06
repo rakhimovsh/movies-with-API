@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <link
+      rel="icon"
+      href="./img/553421_avangers_shield_marvel_eagle_icon.svg"
+    />
+    <title>Movies</title>
+  </head>
+  <body>
+    <div class="preloader">
+      <img class="loader" src="./img/Bean Eater-1s-200px.svg" alt="" />
+    </div>
+    <div class="container">
+      <h1 class="text-center mt-4">Movies catalog</h1>
+      <div class="row">
+        <div class="col-lg-3">
+          <form class="d-flex flex-column form">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control input--search"
+                placeholder="Search by name movie"
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Search</button>
+          </form>
+        </div>
+        <div class="col-lg-9 d-flex flex-column">
+          <h4>Search results: <span class="movies__result">0</span></h4>
+          <div class="alert alert-info" role="alert">
+            Use the form on the to search for a movie
+          </div>
+          <ul
+            class="movies__list p-0 list-unstyled d-flex flex-wrap justify-content-between"
+          ></ul>
+        </div>
+        <div class="shell">
+          <div
+            class="btn-group me-2 pagenation"
+            role="group"
+            aria-label="First group"
+          >
+            <!-- <button type="button" class="btn btn-primary">1</button>
+          <button type="button" class="btn btn-primary">2</button>
+          <button type="button" class="btn btn-primary">3</button>
+          <button type="button" class="btn btn-primary">4</button> -->
+          </div>
+        </div>
+      </div>
+      <div class="modal-container">
+        <div class="popap">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p class="modal--genre"></p>
+            <p class="modal--info"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TEMPLATE -->
+    <template class="template">
+      <div class="card mb-3" style="width: 18rem">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+    </template>
+
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
